@@ -6,7 +6,6 @@ class Adapter:
     round_id = '1'
     base_url = 'https://api.sportsdata.io/v3/soccer/stats/json/PlayerSeasonStatsByPlayer/' + \
         round_id+'/'+player_id+'?key=c356df0197c44f239dbd4faf213fbcd1'
-    to_params = ['PlayerId', 'Name']
 
     def __init__(self, input):
         self.bridge = Bridge()
