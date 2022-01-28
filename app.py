@@ -11,7 +11,7 @@ def log_request_info():
     app.logger.debug('Body: %s', request.get_data())
 
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET'])
 def call_adapter():
     data = request.get_json()
     if data == '':
